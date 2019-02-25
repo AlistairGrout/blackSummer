@@ -1,3 +1,16 @@
 <resources>
+
+    <!-- GENERAL APP INFO -->
     <string name="app_name">blackSummer</string>
+    <string name="title_blck">BLCK</string>
+    <string name="title_summer">SUMMER</string>
+
+    <!-- LOGIN -->
+    <string name="login_button_yes">Heck yes!</string>
+    <string name="login_button_no">Meh nah...</string>
+
+    <string name="login_toast_success">Welcome fella!</string>
+    <string name="login_toast_error">Goodbye Felicia.</string>
+
+
 </resources>
