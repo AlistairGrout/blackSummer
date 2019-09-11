@@ -10,9 +10,9 @@
 
     <!-- TITLE THEME -->
     <style name="TitleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    <item name="android:fontFamily">@font/Skeleton</item>
-    <item name="android:textSize">110dp</item>
-    <item name="android:textColor">#fff</item>
+    <item name="android:fontFamily">@font/skeleton</item>
+    <item name="android:textSize">90dp</item>
+    <item name="android:textColor">#E4AE24</item>
     </style>
 
 </resources>

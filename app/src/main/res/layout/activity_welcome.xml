@@ -5,47 +5,86 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
+        android:background="@color/colorAccent"
         tools:layout_editor_absoluteY="25dp">
 
     <!-- GUIDELINES -->
     <android.support.constraint.Guideline
-            android:id="@+id/guideline1"
+            android:id="@+id/guideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5"/>
 
     <android.support.constraint.Guideline
-            android:id="@+id/guideline2"
+            android:id="@+id/guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.25" />
+            app:layout_constraintGuide_percent="0.25"/>
 
-    <!-- LINEAR LAYOUT + TEXT VIEW LOGO -->
+    <!-- TITLE -->
     <LinearLayout
-            android:id="@+id/logo_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/guideline2"
-            android:gravity="center_horizontal">
-
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
         <TextView
-                android:id="@+id/tvLogo_Blck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/title_blck"
-                android:theme="@style/TitleTheme"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/TitleTheme"
+                />
 
         <TextView
-                android:id="@+id/tvLogo_Summer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="0.5"
                 android:text="@string/title_summer"
-                android:theme="@style/TitleTheme" />
+                android:alpha="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/TitleTheme"
+                />
+    </LinearLayout>
+
+    <!-- LINEAR LAYOUT + BUTTONS -->
+    <LinearLayout
+            android:id="@+id/linearLayoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:text="@string/login_button_no"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
+                />
+
+        <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:text="@string/login_button_yes"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
+                />
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
