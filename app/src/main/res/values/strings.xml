@@ -11,6 +11,8 @@
 
     <string name="login_toast_success">Welcome fella!</string>
     <string name="login_toast_error">Goodbye Felicia.</string>
+    <string name="login_toast_weird">Weird!</string>
+    
 
 
 </resources>
